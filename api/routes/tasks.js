@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const Task = require('../models/task');
 
-zwraca liste tasków o danym driverId
+//zwraca liste tasków o danym driverId
 router.get('/driver/:driverId', (req, res, next) => {
     const driverId = req.params.driverId
     Task.find()
