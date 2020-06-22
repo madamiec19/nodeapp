@@ -4,41 +4,41 @@ const mongoose = require('mongoose');
 
 const Task = require('../models/task');
 
-// zwraca liste tasków o danym driverId
-// router.get('/:driverId', (req, res, next) => {
-//     const driverId = req.params.driverId
-//     Task.find()
-//         .select('title car address scheduledDate comment driverId taskCreator _id')
-//         .where("driverId").equals(driverId)
-//         .exec()
-//         .then(docs => {
-//             const response = {
-//                 count: docs.length,
-//                 tasks: docs.map(doc => {
-//                     return {
-//                         id: doc.id,
-//                         title: doc.title,
-//                         car: doc.car,
-//                         address: doc.address,
-//                         scheduledDate: doc.scheduledDate,
-//                         driverId: doc.driverId,
-//                         comment: doc.comment,
-//                         taskCreator: doc.taskCreator,
-//                         request: {
-//                             type: "GET",
-//                             url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
-//                         }
-//                     }
-//                 })
-//             };
-//             res.status(200).json(response);
-//         })
-//         .catch(err => {
-//             console.log(err);
-//             res.status(500).json({ error: err });
-//         });
+zwraca liste tasków o danym driverId
+router.get('/driver/:driverId', (req, res, next) => {
+    const driverId = req.params.driverId
+    Task.find()
+        .select('title car address scheduledDate comment driverId taskCreator _id')
+        .where("driverId").equals(driverId)
+        .exec()
+        .then(docs => {
+            const response = {
+                count: docs.length,
+                tasks: docs.map(doc => {
+                    return {
+                        id: doc.id,
+                        title: doc.title,
+                        car: doc.car,
+                        address: doc.address,
+                        scheduledDate: doc.scheduledDate,
+                        driverId: doc.driverId,
+                        comment: doc.comment,
+                        taskCreator: doc.taskCreator,
+                        request: {
+                            type: "GET",
+                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
+                        }
+                    }
+                })
+            };
+            res.status(200).json(response);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({ error: err });
+        });
 
-// })
+})
 
 // zwraca task o podanym id
 router.get('/:taskId', (req, res, next) => {
