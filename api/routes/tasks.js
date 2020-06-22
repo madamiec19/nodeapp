@@ -38,7 +38,7 @@ router.get('/driver/:driverId', (req, res, next) => {
             res.status(500).json({ error: err });
         });
 
-})
+});
 
 // zwraca task o podanym id
 router.get('/:taskId', (req, res, next) => {
