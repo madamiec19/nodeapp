@@ -26,7 +26,7 @@ router.get('/:driverId', (req, res, next) => {
                         taskCreator: doc.taskCreator,
                         request: {
                             type: "GET",
-                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks' + doc._id
+                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
                         }
                     }
                 })
@@ -96,7 +96,7 @@ router.get('/', (req, res, next) => {
                         taskCreator: doc.taskCreator,
                         request: {
                             type: "GET",
-                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks' + doc._id
+                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
                         }
                     }
                 })
@@ -140,7 +140,7 @@ router.post('/', (req, res, next) => {
                     taskCreator: result.taskCreator,
                     request: {
                         type: "GET",
-                        url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks' + result._id
+                        url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + result._id
                     }
                 }
             });
