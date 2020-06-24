@@ -82,9 +82,7 @@ router.get('/', (req, res, next) => {
         .select('title car address scheduledDate comment driverId taskCreator _id')
         .exec()
         .then(docs => {
-            const response = {
-                count: docs.length,
-                tasks: docs.map(doc => {
+            const response = docs.map(doc => {
                     return {
                         id: doc.id,
                         title: doc.title,
