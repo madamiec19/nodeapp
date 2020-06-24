@@ -79,9 +79,9 @@ router.get('/', (req, res, next) => {
     Task.find()
         .select('title car address scheduledDate comment driverId taskCreator _id')
         .exec()
-        .then(docs => {
-            const response = {
-                tasks: docs.map(doc => {
+       .then(docs => {
+            const response = 
+                docs.map(doc => {
                     return {
                         id: doc.id,
                         title: doc.title,
@@ -93,11 +93,10 @@ router.get('/', (req, res, next) => {
                         taskCreator: doc.taskCreator,
                         request: {
                             type: "GET",
-                            url: 'http://localhost:3000/tasks/' + doc._id
+                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
                         }
                     }
-                })
-            };
+                });
             res.status(200).json(response);
         })
         .catch(err => {
