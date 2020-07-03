@@ -8,7 +8,6 @@ const Task = require('../models/task');
 router.get('/driver/:driverId', (req, res, next) => {
     const driverId = req.params.driverId
     Task.find()
-        .select('title car address scheduledDate comment driverId taskCreator _id')
         .where("driverId").equals(driverId)
         .exec()
         .then(
