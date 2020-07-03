@@ -11,12 +11,12 @@ router.get('/driver/:driverId', (req, res, next) => {
         .select('title car address scheduledDate comment driverId taskCreator _id')
         .where("driverId").equals(driverId)
         .exec()
-        .then(docs => {
-            const response = {
-                count: docs.length,
-                tasks: docs.map(doc => {
+        .then(
+            docs => {
+            const response = 
+                docs.map(doc => {
                     return {
-                        id: doc.id,
+                        id: doc._id,
                         title: doc.title,
                         car: doc.car,
                         address: doc.address,
@@ -30,7 +30,8 @@ router.get('/driver/:driverId', (req, res, next) => {
                         }
                     }
                 })
-            };})
+            }
+            )
         .catch(err => {
             console.log(err);
             res.status(500).json({ error: err });
