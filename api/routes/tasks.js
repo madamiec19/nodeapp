@@ -6,12 +6,10 @@ const Task = require('../models/task');
 
 //zwraca liste tasków o danym driverId
 router.get('/driver/:driverId', (req, res, next) => {
-    const driverId = req.params.driverId
     Task.find()
-        .where("driverId").equals(driverId)
+        .select('title car address scheduledDate comment driverId taskCreator _id')
         .exec()
-        .then(
-            docs => {
+        .then(docs => {
             const response = 
                 docs.map(doc => {
                     return {
@@ -28,16 +26,16 @@ router.get('/driver/:driverId', (req, res, next) => {
                             url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
                         }
                     }
-                })
-            }
-            )
+                });
+            res.status(200).json(response);
+        })
         .catch(err => {
             console.log(err);
             res.status(500).json({ error: err });
         });
 
-});
 
+});
 // zwraca task o podanym id
 router.get('/:taskId', (req, res, next) => {
     const id = req.params.taskId;
