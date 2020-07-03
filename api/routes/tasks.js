@@ -6,9 +6,11 @@ const Task = require('../models/task');
 
 //zwraca liste tasków o danym driverId
 router.get('/driver/:driverId', (req, res, next) => {
+    const driverId = req.params.driverId;
     Task.find()
         .select('title car address scheduledDate comment driverId taskCreator _id')
         .exec()
+        .where("driverId").equals(driverId)
         .then(docs => {
             const response = 
                 docs.map(doc => {
