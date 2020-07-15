@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 
 const tasksRoutes = require('./api/routes/tasks');
-const movesRoutes = require('./api/routes/moves');
+
 
 mongoose.connect('mongodb+srv://admin:' + process.env.MONGO_ATLAS_PW + '@node-rest-rent-aeybq.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser :true,
 useUnifiedTopology: true});
@@ -26,7 +26,6 @@ app.use((req, res, next) => {
 
 //routes which handle requests 
 app.use('/tasks', tasksRoutes);
-app.use('/moves', movesRoutes);
 
 //handling errors
 app.use((req, res, next) => {
