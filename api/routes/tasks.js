@@ -103,7 +103,7 @@ router.post('/', (req, res, next) => {
         car: req.body.car,
         action: req.body.action,
         address: req.body.address,
-        scheduledTimeMilli: req.body.scheduledDate,
+        scheduledTimeMilli: req.body.scheduledTimeMilli,
         comment: req.body.comment,
         carMileageStart: req.body.carMileageStart,
         carMileageStop: req.body.carMileageStop,
@@ -111,7 +111,7 @@ router.post('/', (req, res, next) => {
         createdTimeMilli: createdTime,
         receiveTimeMilli: null,
         endTimeMilli: null,
-        coordinatorId: req.body.taskCreator
+        coordinatorId: req.body.coordinatorId
     });
 
     task.save()
