@@ -146,7 +146,7 @@ router.patch('/:taskId', (req, res, next) => {
             console.log(err);
             res.status(500).json({ error: err });
         });
-});s
+});
 
 // usuwa task o podanym id
 router.delete('/:taskId', (req, res, next) => {
