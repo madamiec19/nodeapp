@@ -7,7 +7,7 @@ const Task = require('../models/task');
 // zwraca liste wszystkich tasków
 router.get('/', (req, res, next) => {
     Task.find()
-        .select('action car address scheduledTimeMilli comment driverId coordinatorId _id')
+        .select()
         .exec()
         .then(docs => {
             res.status(200).json({
