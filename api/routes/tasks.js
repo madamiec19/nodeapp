@@ -109,8 +109,8 @@ router.post('/', (req, res, next) => {
         carMileageStop: req.body.carMileageStop,
         driverId: req.body.driverId,
         createdTimeMilli: createdTime,
-        receiveTimeMilli: null,
-        endTimeMilli: null,
+        receiveTimeMilli: 0,
+        endTimeMilli: 0,
         coordinatorId: req.body.coordinatorId
     });
 
