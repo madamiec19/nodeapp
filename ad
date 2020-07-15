@@ -1,0 +1,123 @@
+[33mcommit fbd733aa364476ea3ff55809badbb468c18c405f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Tue Jul 14 21:36:30 2020 +0200
+
+    Update tasks.js
+
+[33mcommit ff0d8d6ae11b46c37ccd7e9f019be2b782e13a9c[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Tue Jul 14 21:32:17 2020 +0200
+
+    Update tasks.js
+
+[33mcommit c58a33c555e88c31f01f6249a09785d5fcef2ff0[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Fri Jul 3 17:52:22 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 2508a2e8ba1ffbac99cd8daa40d463e8c11aa765[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Fri Jul 3 17:50:58 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 14a12a6cc9bc0ab3ab4d4c047bb16d1aa21b8422[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Fri Jul 3 17:49:03 2020 +0200
+
+    Update tasks.js
+
+[33mcommit e483b03d226a25820e9ceedaa20a570abd579bf7[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Fri Jul 3 17:45:59 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 2a61bbf726879d7050ee200b0cbf2992d74e172e[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Fri Jul 3 17:44:43 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 9942e4859f8c33fbc0b3a5ddc13e5bb105466506[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Fri Jul 3 17:40:12 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 00e259e417dd6ffca280e1e5de672c5e8c775ea2[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Wed Jun 24 17:25:31 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 00b5b3601c4732afb4730a16e7833024c2292e2d[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Wed Jun 24 17:20:22 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 4a1feb2462b4ad2e00fc59861cc2180505b1e86c[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Wed Jun 24 16:59:18 2020 +0200
+
+    Update tasks.js
+
+[33mcommit e5d920306fff1934a470fa87aad782ae6dc1804e[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Wed Jun 24 16:56:57 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 760181adca34d69eb86a8f6f20a2aa85292dba34[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Wed Jun 24 16:50:05 2020 +0200
+
+    Update tasks.js
+
+[33mcommit d4762ba09f30ea6dac22cc9c953cdf889b9a3d28[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Mon Jun 22 19:08:27 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 5087a0d1e0ea2b59af3c26eb52d2722b2eeb4782[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Mon Jun 22 19:07:53 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 408afa8b73a5c02a76fd6b5a2fc864f5417b9660[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Mon Jun 22 19:07:05 2020 +0200
+
+    Update tasks.js
+    
+    fix
+
+[33mcommit a70e2565b7daca9db7cdc806c40ea9457e393c45[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Mon Jun 22 19:06:19 2020 +0200
+
+    Update tasks.js
+    
+    router.get('/:driverId'... has conflict with similiar method
+
+[33mcommit e9992bd0ec42e6408b3ac21fd77bf55c9a9514b7[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Mon Jun 22 19:04:02 2020 +0200
+
+    Update tasks.js
+
+[33mcommit 012e6cb05da7cb04e69dc9340011c36b96f7dcb3[m
+Author: madamiec19 <48699068+madamiec19@users.noreply.github.com>
+Date:   Mon Jun 22 19:02:42 2020 +0200
+
+    Update tasks.js
+
+[33mcommit d0dab0375402a19905fbb136e6edf636e4b13d24[m
+Author: Michał Adamiec <madamiec19@gmail.com>
+Date:   Mon Jun 22 17:49:58 2020 +0200
+
+    initial commit

@@ -5,14 +5,14 @@ const taskSchema = mongoose.Schema({
     car: {type: String, required: true},
     action: {type: String, required: true},
     address: {type: String, required: true},
-    scheduledTimeMilli: {type: Long, required: true},
+    scheduledTimeMilli: {type: Number, required: true},
     comment: {type: String},
     carMileageStart: {type: Number},
     carMileageStop: {type: Number},
     driverId: {type: String }, 
     createdTimeMilli: {type: String},  // zrobić żeby przy generowaniu ustawiało aktualną datę
     receiveTimeMilli: {type: String}, 
-    endTimeMilliTimeMilli: {type: Long }, 
+    endTimeMilliTimeMilli: {type: Number }, 
     coordinatorId: {type: String, required: true}
 });
     
