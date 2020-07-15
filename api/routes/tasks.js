@@ -7,20 +7,22 @@ const Task = require('../models/task');
 // zwraca liste wszystkich tasków
 router.get('/', (req, res, next) => {
     Task.find()
-        .select('title car address scheduledDate comment driverId taskCreator _id')
+        .select('action car address scheduledTimeMilli comment driverId coordinatorId _id')
         .exec()
         .then(docs => {
             res.status(200).json({
                 tasks: docs.map(doc => {
                     return {
                         id: doc.id,
-                        title: doc.title,
-                        car: doc.car,
+                        action: doc.action,
                         address: doc.address,
-                        scheduledDate: doc.scheduledDate,
+                        car: doc.car,
+                        scheduledTimeMilli: doc.scheduledTimeMilli,
+                        carMileageStart: doc.carMileageStart,
+                        carMileageStop: doc.carMileageStop,
                         driverId: doc.driverId,
                         comment: doc.comment,
-                        taskCreator: doc.taskCreator,
+                        coordinatorId: doc.taskCreator,
                         request: {
                             type: "GET",
                             url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
