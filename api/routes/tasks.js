@@ -94,37 +94,28 @@ router.get('/driver/:driverId', (req, res, next) => {
 
 // dodaje nowy task
 router.post('/', (req, res, next) => {
+    const createdTime = Date.now();
+    
     const task = new Task({
         _id: mongoose.Types.ObjectId(),
-        title: req.body.title,
         car: req.body.car,
+        action: req.body.action,
         address: req.body.address,
-        scheduledDate: req.body.scheduledDate,
+        scheduledTimeMilli: req.body.scheduledDate,
         comment: req.body.comment,
+        carMileageStart: req.body.carMileageStart,
+        carMileageStop: req.body.carMileageStop,
         driverId: req.body.driverId,
-        taskCreator: req.body.taskCreator
+        createdTimeMilli: createdTime,
+        receiveTimeMilli: null,
+        endTimeMilli: null,
+        coordinatorId: req.body.taskCreator
     });
 
     task.save()
         .then(result => {
             console.log(result)
-            res.status(200).json({
-                message: "handling post tasks",
-                createdTask: {
-                    id: result.id,
-                    title: result.title,
-                    car: result.car,
-                    address: result.address,
-                    scheduledDate: result.scheduledDate,
-                    comment: result.comment,
-                    driverId: result.driverId,
-                    taskCreator: result.taskCreator,
-                    request: {
-                        type: "GET",
-                        url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + result._id
-                    }
-                }
-            });
+            res.status(200).json(result);
         })
         .catch(err => {
             console.log(err)

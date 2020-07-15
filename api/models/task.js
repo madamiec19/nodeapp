@@ -12,7 +12,7 @@ const taskSchema = mongoose.Schema({
     driverId: {type: String }, 
     createdTimeMilli: {type: String},  // zrobić żeby przy generowaniu ustawiało aktualną datę
     receiveTimeMilli: {type: String}, 
-    endTimeMilliTimeMilli: {type: Number }, 
+    endiTimeMilli: {type: Number }, 
     coordinatorId: {type: String, required: true}
 });
     
