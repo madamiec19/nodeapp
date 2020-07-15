@@ -96,7 +96,7 @@ router.get('/driver/:driverId', (req, res, next) => {
 
 // dodaje nowy task
 router.post('/', (req, res, next) => {
-    const createdTime = Date.now();
+
     
     const task = new Task({
         _id: mongoose.Types.ObjectId(),
@@ -108,7 +108,7 @@ router.post('/', (req, res, next) => {
         carMileageStart: req.body.carMileageStart,
         carMileageStop: req.body.carMileageStop,
         driverId: req.body.driverId,
-        createdTimeMilli: createdTime,
+        createdTimeMilli: 123,
         receiveTimeMilli: 0,
         endTimeMilli: 0,
         coordinatorId: req.body.coordinatorId
