@@ -22,6 +22,7 @@ router.get('/', (req, res, next) => {
                         carMileageStop: doc.carMileageStop,
                         driverId: doc.driverId,
                         createdTimeMilli: doc.createdTimeMilli,
+                        receiveTimeMilli: 0,
                         comment: doc.comment,
                         coordinatorId: doc.taskCreator,
                         request: {
