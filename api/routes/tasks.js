@@ -25,8 +25,7 @@ router.get('/', (req, res, next) => {
                         receiveTimeMilli: doc.receiveTimeMilli,
                         endTimeMilli: doc.endTimeMilli,
                         comment: doc.comment,
-                        coordinatorId: doc.taskCreator
-                     
+                        coordinatorId: doc.coordinatorId                    
                     }
                 })
             })
