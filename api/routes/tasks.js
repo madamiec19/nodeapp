@@ -22,13 +22,10 @@ router.get('/', (req, res, next) => {
                         carMileageStop: doc.carMileageStop,
                         driverId: doc.driverId,
                         createdTimeMilli: doc.createdTimeMilli,
-                        receiveTimeMilli: 0,
+                        receiveTimeMilli: doc.receiveTimeMilli,
                         comment: doc.comment,
-                        coordinatorId: doc.taskCreator,
-                        request: {
-                            type: "GET",
-                            url: 'http://vps-f1c11595.vps.ovh.net:3000/tasks/' + doc._id
-                        }
+                        coordinatorId: doc.taskCreator
+                     
                     }
                 })
             })
